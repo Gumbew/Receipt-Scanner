@@ -1,1 +1,5 @@
 recognizers-text-date-time==1.0.2a2
+opencv-python==4.1.2.30
+pytesseract==0.3.0
+azure==4.0.0
+
