@@ -3,12 +3,13 @@ import pprint
 
 
 def parse_header(header):
+    print(' -> info: parsing header:\n -{}\n\n'.format(header))
     header = re.sub('\n{2,}', '\n', header)
     lines = header.split('\n')
     llc = _pop_llc(lines)
     shop_name = _pop_shop_name(lines)
     tax_number = _pop_tax_number(lines)
-    return llc, shop_name, tax_number, lines
+    return llc, shop_name, tax_number
 
 
 def _pop_tax_number(lines):
