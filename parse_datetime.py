@@ -24,7 +24,8 @@ def _test():
         ['22.12.2016 12:27', '2016-12-22T12:27'],
         ['30-11-19 10:43', '2019-11-30T10:43'],
         ['1.07.2017 11:46', '2017-07-01T11:46'],
-        ['20/11/2019 19:36:12', '2019-11-20T19:36:12']
+        ['20/11/2019 19:36:12', '2019-11-20T19:36:12'],
+        ['| 23/11/19 14:12 4', '2019-11-23T14:12']
     ]
 
     for i in range(len(data)):
@@ -32,7 +33,7 @@ def _test():
         expected = data[i][1]
 
         if actual == expected:
-            print(' > {} - passed'.format(i))
+            print(' > {} - passed ({} -> {})'.format(i, data[i][0], data[i][1]))
         else:
             print('FAIL: actual={} != expected={}'.format(actual, expected))
 
