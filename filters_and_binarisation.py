@@ -2,7 +2,14 @@ import cv2
 
 
 def apply_filters(image):
-    image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+    if len(image.shape) == 3:
+        height, width, _ = image.shape
+    else:
+        height, width = image.shape
+
+    if height and width <= 1500:
+        image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+
     img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     # Denoising
