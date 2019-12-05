@@ -1,9 +1,10 @@
 import cv2
 import pytesseract
 
+
 import filters_and_binarisation
 
-from parser import ReceiptParser
+from receipt_parser import ReceiptParser
 from api import ReceiptScannerApi
 
 
