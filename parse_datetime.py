@@ -5,7 +5,7 @@ import re
 
 def parse_datetime(datetime_string):
     print(' -> info: parsing datetime: {}\n\n'.format(datetime_string))
-    datetime_string = _remove_trash(datetime_string)
+    #datetime_string = _remove_trash(datetime_string)
     results = recognize_datetime(datetime_string, Culture.English)
     if len(results) == 0:
         return None
