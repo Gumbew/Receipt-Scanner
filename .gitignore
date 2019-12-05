@@ -106,3 +106,5 @@ venv.bak/
 #project
 *.ini
 .idea/
+images/
+package.json
