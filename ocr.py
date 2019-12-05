@@ -3,8 +3,8 @@ import pytesseract
 
 import filters_and_binarisation
 
-from receipt_scanner_parser import ReceiptParser
-from receipt_scanner_api import ReceiptScannerApi
+from parser import ReceiptParser
+from api import ReceiptScannerApi
 
 
 class ReceiptScannerOCR:

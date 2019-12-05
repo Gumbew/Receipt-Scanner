@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-from receipt_scanner_ocr import ReceiptScannerOCR
+from ocr import ReceiptScannerOCR
 from pprint import pprint
 
 image_path = r"images\3.jpg"
