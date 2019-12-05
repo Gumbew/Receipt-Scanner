@@ -2,8 +2,11 @@ import re
 
 
 def parse_total(text):
-    res = re.search(r'(\d+[.,]\d{1,2}|\d+)', text)
-    return {'total': res.group(0), 'currency': 'UAH'}
+    if len(text) > 0:
+        res = re.search(r'(\d+[.,]\d{1,2}|\d+)', text)
+        return {'total': res.group(0), 'currency': 'UAH'}
+
+    return {'total': 'undefined'}
 
 
 def _test():
