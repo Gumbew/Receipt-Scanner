@@ -30,7 +30,7 @@ def _pop_shop_name(lines):
 
         match = re.search(r"[МмН][Аа][Гг][Аа][Зз][Ии][Нн]", line)
         if match != None:
-            print(f' -info: found shop line without the name: {line}')
+            print(f' -> info: found shop line without the name: {line}')
             lines.remove(line)
     return None
 
